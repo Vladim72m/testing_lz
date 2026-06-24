@@ -13,3 +13,12 @@ def test_division_by_zero():
 
 def test_both_errors():
     assert equation(2, 5, 4, 4) == "Ошибка: корень из отрицательного числа"
+
+def test_root_of_zero():
+    assert equation(5, 5, 10, 5) == 0.0
+
+def test_negative_inputs():
+    assert equation(-2, -6, -3, -5) == 1.0
+
+def test_float_result():
+    assert equation(10, 6, 8, 4) == 0.5
